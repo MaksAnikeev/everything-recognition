@@ -24,6 +24,7 @@ def get_cascades():
     return cascades
 
 
+
 if __name__ == "__main__":
     cascades = get_cascades()
     video_capture = cv2.VideoCapture(0)
@@ -42,6 +43,7 @@ if __name__ == "__main__":
             for capture in captures:
                 for (x, y, w, h) in capture:
                     draw_sqare(webcam_frame, color)
+
         show_frame(webcam_frame)
 
         if is_user_wants_quit():
